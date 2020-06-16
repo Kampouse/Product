@@ -5,6 +5,7 @@ import { Dropdown, Drop, DropdownItem, Bigbox,SidePanel } from "./style.js";
 let SideBloc = () => { 
     const [Panel, setPanel] = useState("200px");
     return (
+        // not perfect
       <>
 
         <button onClick = {() =>  Panel === "0px"?setPanel("200px"):setPanel("0px")   }> yes</button>
