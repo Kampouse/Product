@@ -9,7 +9,6 @@ height:100%;
 `
 
 
-
 export const Dropdown = styled.div`
 position:relative;
 overflow:hidden;
@@ -42,12 +41,9 @@ transition:1s;
 
 export const DropdownItem = styled.a`
          position: relative;
-         width: 200px;
+         width:auto;
          top: -2px;
          left: auto;
-
-        
-
          position: center;
          cursor: pointer;
          background-color: violet;
@@ -69,16 +65,28 @@ export const DropdownItem = styled.a`
          }
        `;
 
+export const Drop = styled.div`
 
-export const Drop  = styled.div`
 width:200px;
+height:fit-content;
 overflow:block;
 cursor:pointer;
 background-color:violet;
 border-style:groove;
 color:palevioletred;
 border-color:palevioletred;
-
-
 font-size: 1.5em;
 text-align: center;`
+
+export const SidePanel = styled.div`
+         position: relative;
+         overflow: Hidden;
+         height: 100%;
+         width: ${(props) => props.width};
+         background-color: purple;
+         max-width:225;
+         transition:1s;
+       `;
+
+
+

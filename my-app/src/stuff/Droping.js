@@ -7,12 +7,11 @@ function Droping() {
 	// const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible("0px");
 	const [Open,setOpen] = useState("0px")
 const [Maggy, setMaggy] = useState("basic")
-	function dog() {
+	function Setmaximum() {
 		// set(max-height  to a high nomber to keep an animation but should be to high to avoid large delay
 	setOpen("300px")
-
 }
-function cat() {
+function Setminimum() {
 	setOpen("0px")
  
 } 
@@ -23,10 +22,10 @@ return (
 		<Drop
 			onClick={() => {
 				// cant have 2 thing open...
-				Open === "0px" ? dog() : cat();
+				Open === "0px" ? Setmaximum() : Setminimum();
 			}}
 		>
-			please
+			drop down content
 		</Drop>
 
 		<Dropdown height={Open}>
