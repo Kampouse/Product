@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const Bigbox = styled.div`
-width:25%;
+display:list-item;
 
 
-
+width:100%;
+height:100%;
 `
 
-export const Dropdown = styled.div`
 
+
+export const Dropdown = styled.div`
+position:relative;
 overflow:hidden;
 
 max-height:${props => props.height};
@@ -18,7 +21,7 @@ color:palevioletred;
 
 transition:0.5s;
 display:grid;
-border-style:groove;
+
 border-color:palevioletred;
 border-left-color:palevioletred;   
 border-right-color:palevioletred;
@@ -27,9 +30,11 @@ border-bottom:none;
 border-left:none;
 border-right:none;
  transition:0.5s;
+ top:5%;
  &:hover{
+   position:relative;
 color:purple;
-right:10%;
+
 transition:1s;
 
  }
@@ -37,7 +42,7 @@ transition:1s;
 
 export const DropdownItem = styled.a`
          position: relative;
-         width: auto;
+         width: 200px;
          top: -2px;
          left: auto;
 
@@ -66,14 +71,14 @@ export const DropdownItem = styled.a`
 
 
 export const Drop  = styled.div`
-
+width:200px;
 overflow:block;
 cursor:pointer;
 background-color:violet;
 border-style:groove;
 color:palevioletred;
 border-color:palevioletred;
-border-bottom:none;
+
 
 font-size: 1.5em;
 text-align: center;`
