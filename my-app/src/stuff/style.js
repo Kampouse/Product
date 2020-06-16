@@ -5,7 +5,7 @@ display:list-item;
 
 
 width:100%;
-height:100%;
+height:-1%;
 `
 
 
@@ -29,7 +29,6 @@ border-bottom:none;
 border-left:none;
 border-right:none;
  transition:0.5s;
- top:5%;
  &:hover{
    position:relative;
 color:purple;
@@ -68,6 +67,7 @@ export const DropdownItem = styled.a`
 export const Drop = styled.div`
 
 width:200px;
+position:relative;
 height:fit-content;
 overflow:block;
 cursor:pointer;
@@ -80,12 +80,15 @@ text-align: center;`
 
 export const SidePanel = styled.div`
          position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
          overflow: Hidden;
-         height: 100%;
+         height: 700px;
          width: ${(props) => props.width};
          background-color: purple;
-         max-width:225;
-         transition:1s;
+         max-width: 225;
+         transition: 1s;
        `;
 
 
