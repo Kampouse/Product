@@ -6,7 +6,7 @@ function Droping() {
  // do  you want it to be outer?
 	// const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible("0px");
 	const [Open,setOpen] = useState("0px")
-const [Maggy, setMaggy] = useState("basic")
+
 	function Setmaximum() {
 		// set(max-height  to a high nomber to keep an animation but should be to high to avoid large delay
 	setOpen("300px")
@@ -21,7 +21,7 @@ return (
 	<Bigbox>
 		<Drop
 			onClick={() => {
-				// cant have 2 thing open...
+				// cant have 2 thing open... while using the custom hooks
 				Open === "0px" ? Setmaximum() : Setminimum();
 			}}
 		>

@@ -7,8 +7,6 @@ display:list-item;
 width:100%;
 height:-1%;
 `
-
-
 export const Dropdown = styled.div`
 position:relative;
 overflow:hidden;
@@ -67,6 +65,7 @@ export const DropdownItem = styled.a`
 export const Drop = styled.div`
 
 width:200px;
+
 position:relative;
 height:fit-content;
 overflow:block;
@@ -81,6 +80,7 @@ text-align: center;`
 export const SidePanel = styled.div`
          position: relative;
          display: flex;
+         top:30px;
          flex-direction: column;
          align-items: center;
          overflow: Hidden;
@@ -91,5 +91,19 @@ export const SidePanel = styled.div`
          transition: 1s;
        `;
 
+
+export const NavBar = styled.div`
+overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index:1;
+  
+
+
+
+
+`
 
 

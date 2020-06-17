@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import Droping from "./Droping.js"
-import { Dropdown, Drop, DropdownItem, Bigbox,SidePanel } from "./style.js";
- 
+import { Dropdown, Drop, DropdownItem, Bigbox,SidePanel,NavBar } from "./style.js";
+ // might want to set the panel size to a global state 
 let SideBloc = () => { 
     const [Panel, setPanel] = useState("200px");
     return (
       // not perfect
       <>
-        <button
-          onClick={() =>
-            Panel === "0px" ? setPanel("200px") : setPanel("0px")
-          }
-        >
-          {" "}
-          yes
-        </button>
+     
+        
+        
+        
         <SidePanel width={Panel}>
           <Droping></Droping>
           <Droping></Droping>
