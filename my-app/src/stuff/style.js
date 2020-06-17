@@ -94,11 +94,12 @@ export const SidePanel = styled.div`
 
 export const NavBar = styled.div`
 overflow: hidden;
-  background-color: #333;
+  background-color: hotpink;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
   z-index:1;
+  opacity:0.9;
   
 
 
