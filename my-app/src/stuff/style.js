@@ -73,18 +73,19 @@ cursor:pointer;
 background-color:violet;
 border-style:groove;
 color:palevioletred;
-border-color:palevioletred;
+border-color:rgba(208, 109, 109, 0.4);
+y-axis:0.9;
 font-size: 1.5em;
 text-align: center;`
 
 export const SidePanel = styled.div`
          position: relative;
          display: flex;
-         top:30px;
+         top:40px;
          flex-direction: column;
          align-items: center;
          overflow: Hidden;
-         height: 700px;
+         height: 560px;
          width: ${(props) => props.width};
          background-color: purple;
          max-width: 225;
@@ -95,16 +96,42 @@ export const SidePanel = styled.div`
 export const NavBar = styled.div`
 overflow: hidden;
   background-color: hotpink;
+  display:flex;
+  justify-cotent:row;
   position: fixed; 
   top: 0; 
   width: 100%;
   z-index:1;
   opacity:0.9;
-  
+  border-style:groove;
+  border-color: palevioletred;
 
 
 
 
 `
 
+export const NavElement =  styled.a`
 
+
+color:purple;
+backgroud-color:palevioletred;
+border-style: groove;
+border-color:red;
+height:fit-content;
+margin:5px;
+cursor:pointer;
+transition:1s;
+&:hover {
+
+background-color:red;
+transition: 1s;
+}
+`
+
+export const Background = styled.div`
+background-color:lightpink;
+positon:fixed;
+top:0;
+height:600px;
+`

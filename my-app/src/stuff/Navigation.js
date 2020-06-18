@@ -1,12 +1,19 @@
 import React,{useState} from 'react';
-import {NavBar} from "./style.js";
+import {NavBar,NavElement} from "./style.js";
+// remove border with vertical line?
+// adding a global state for the panel something similar;
 let Navigation = () => {
 
 
 return(<NavBar>
 
-<button> yes</button>
 
+<NavElement>long content</NavElement>
+
+<NavElement>content</NavElement>
+<NavElement>content</NavElement>
+<NavElement>content</NavElement>
+<NavElement>content</NavElement>
 </NavBar>)
 
 };
