@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "cra-template": "1.0.3",
+    "kedge": "^2.2.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-burger-menu": "^2.6.14",

@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import Droping from "./Droping.js"
 import { Dropdown, Drop, DropdownItem, Bigbox,SidePanel,NavBar } from "./style.js";
- // might want to set the panel size to a global state 
- 
+import Kedge,{useStore} from "kedge"
+import Store from "./Store.js"
+// using Kedge for levering global state 
+  
 let SideBloc = () => { 
-    const [Panel, setPanel] = useState("200px");
+  let PanelSize = useStore(Store.PanelWidth)
+  
+    
     return (
       // not perfect
       <>
-        <SidePanel width={Panel}>
+        <SidePanel width={PanelSize}>
           <Droping></Droping>
           <Droping></Droping>
           
