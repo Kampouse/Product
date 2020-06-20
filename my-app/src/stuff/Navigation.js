@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import {NavBar,NavElement} from "./style.js";
-import kedge,{useStore} from "kedge"
+import kedge,{useStore,useReset} from "kedge"
 import Store from "./Store.js"
+
 // remove border with vertical line?
 
 let Navigation = () => {
-    let PanelSize = useStore( Store.PanelWidth)    
+let PanelSize = useStore( Store.PanelWidth)    
 return(<NavBar>
 <NavElement onClick= { () => {Store.SetPanel(Store.PanelWidth,PanelSize)}}> left panel </NavElement>
 <NavElement>long content</NavElement>

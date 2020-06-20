@@ -13,8 +13,8 @@ let SideBloc = () => {
       // not perfect
       <>
         <SidePanel width={PanelSize}>
-          <Droping></Droping>
-          <Droping></Droping>
+          <Droping/>
+          <Droping />
           
         </SidePanel>
       </>
